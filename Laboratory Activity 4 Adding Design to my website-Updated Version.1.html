@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+</head>
+<style>
+    *,
+    *::before,
+    *::after{box-sizing: border-box;}
+.wrapper{max-width: 50rem;
+margin-inline: auto;
+padding-inline: 1rem;}
+.site-title{font-size: 3rem;
+text-align: center;
+color: #12c2e9;}
+.site-title:hover{-webkit-text-stroke: 2px #fff;
+color: transparent;}
+.site-title:hover{background-color: #12c2e9;}
+.section-title{font-size: 2.25rem;}
+.introduction{background-image: linear-gradient(45deg,#12c2e9,#c471ed);}
+.introduction::after{
+    content: '';
+    background: rgb(12, 151, 231);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(-7deg);}
+    button{background-color: blue;
+    color:white;
+    position: relative;
+left: 48%;
+top: 50%;}
+.introduction:hover{-webkit-text-stroke: 1px #fff;
+color: transparent;}
+.par1{text-align: center;
+color: white;
+background-color: #00171f;
+border: solid 2px darkblue;}
+.butt2{background-color: blue;
+color: white;
+position: relative;
+left: 48.3%;
+top: 50%;}
+.par2{text-align: center;
+color: white;
+background-color: #003459;
+border: solid 2px darkblue;}
+.birth{background-color: blue;
+color: white;
+position: relative;
+left: 47%;
+top: 50%;}
+.par3{text-align: center;
+color: white;
+background-color: #007ea7;
+border: solid 2px darkblue;}
+.hobb{background-color: blue;
+color: white;
+position: relative;
+left: 47.5%;
+top: 50%;}
+.par4{text-align: center;
+color: white;
+background-color: #00a8e8;
+border: solid 2px darkblue;}
+.skill{background-color: blue;
+color: white;
+position: relative;
+left: 44%;
+top: 50%;}
+.videos{position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 110%;
+  width: 100%;
+  z-index: -1;
+}
+.video{position: absolute;
+  right: 0%;
+  bottom: -5%;
+  height: 56%;
+  width: 100%;
+  z-index: -1;}
+.second{max-width: 50rem;
+margin-inline: auto;
+padding-inline: 1rem;}
+.third{background-image: linear-gradient(45deg,#12c2e9,#c471ed);}
+.third:hover{-webkit-text-stroke: 1px #fff;
+color: transparent;}
+
+.School{background-color: blue;
+color: white;
+position: relative;
+left: 0%;
+top: 50%;}
+.university{background-color: darkgreen;
+color: white;
+position: relative;
+left: 0.7%;
+top: 50%;}
+.container {
+  display: flex;
+  align-items: center; 
+ padding-left: 10px;
+ position: relative;
+  width: 50%;
+}
+
+.image {
+  margin-left: 15px ;
+  margin-right: 15px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 18px;
+  right: 18px;
+  height: 385px;
+  width: 63%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 436px;
+  right: 436px;
+  height: 385px;
+  width: 63%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay1 {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 850px;
+  right: 850px;
+  height: 385px;
+  width: 63%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay2 {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+    </style>
+<body>
+    <header>
+        <h1 class="site-title">Lab 2; Jessie's Portfolio Website</h1>
+    </header>
+    <section class="introduction">
+        <div class="wrapper">
+            <h2 class="section-title">Introduction</h2>
+            <p>Hi there! I am Jessie and I will talk about why I chose this course.
+                I took this course because it incline with my various skillset in relation with technology
+                Like building computers, software experties using various software platforms in microsoft.
+                In addition I like to experience how to build a website and what are the the ways how to build it.<br>
+                Also I want to learn more about coding and stuff, how they work and create these platforms.
+                Furthermore this course is a great asset for my future and my career for the reason that this is 
+                the most demanding job in the future. I believe that technology have a huge impact towards businesses
+                and that is the reason why I chose this course in order to create my own IT company someday.</p>
+        </div>
+    </section>
+    <button>NAME:</button><br>
+    <p class="par1"><b>Jessie James A. Chacapna</b></p>
+    <button class="butt2">AGE:</button>
+    <p class="par2"><b>19</b></p>
+    <button class="birth">BIRTHDATE:</button>
+    <p class="par3"><b>April 7,2004</b></p>
+    <button class="hobb">HOBBIES:</button>
+    <p class="par4"><b>"Online Games,Badminton,Watching movies and anime, and Computer Builds</b></p>
+    <button class="skill">SKILLS and EXPERIENCE</button>
+    <section class="third">
+    <div class="second">
+      <video autoplay loop muted plays-inline class="videos">
+        <source src="winter.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted plays-inline class="video">
+        <source src="white.mp4" type="video/mp4">
+      </video>
+    <p>I have Built my first personal Computer, Had a background on c++,
+                        I also cracked windows applications especially MS WORD
+                        In have also experience on circuits and microelectronics,
+                        Example Building amplifiers via dc biasing the signal
+                    Through headset connected to my phone and to the speaker.Furthermore
+                I can fix any computer related problem whether hardware or software related.</p></div>
+                <button class="School">School attended-></button><button class="university">University of the Cordilleras</button></section>
+                <br>
+                <div class="container">
+                <div class="image"> <img src="music.jpg" alt="This is my image." height="385px"/> </div> 
+                <div class="image"> <img src="CSGO.jpg" alt="This is my second image." height="385px"/> </div> 
+                <div class="image"> <img src="imaged.jpg" alt="My third image." height="385px"/> </div> 
+                <div class="overlay">
+                <div class="text">Favorite Music artist</div>
+                </div>
+                <div class="overlay1">
+                  <div class="text">This is my favorite game (rip)</div>
+                </div>
+                <div class="overlay2">
+                  <div class="text">Me on the day of Citcs Orientation</div>
+                </div>
+
+</div>
+ </body>
+</html>
